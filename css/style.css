@@ -1,0 +1,765 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+    font-weight: bold
+  }
+  
+  body{
+    background-color: black;
+    background-image:   url('https://img.freepik.com/fotos-premium/uma-cozinha-cor-de-rosa-com-um-forno-cor-de-rosa-e-uma-tabua-de-cortar-em-madeira_812563-347.jpg?size=626&ext=jpg&ga=GA1.1.579189168.1679515289&semt=ais');
+    background-size: 130%;
+    background-repeat: no-repeat;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  li{
+    list-style: none
+  }
+  
+  img{
+    width: 50%;
+    height: 100%;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  .head{
+    position: fixed;
+    display:flex;
+    top: 0;
+    justify-content: space-between;
+    width: 100%;
+    height: 12%;
+    padding: 1% 5%;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .head img{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: 10vh;
+    width: 6vw;
+  }
+  
+  .nav-menu{
+    display:flex;
+    align-items: center;
+    gap: 60px;
+    margin-right: 40%;
+  }
+  
+  .nav-menu a{
+    font-size: 120%;
+    color: #f79aaf;
+  }
+  
+  
+  .main-page{
+    text-align: center;
+    margin-top: 30%;
+    margin-bottom: 10%;
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  
+  #text{
+    text-align: center;
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
+  
+  #text h1{
+    margin-top: -15%;
+    margin-right: 2%;
+    color: white;
+    font-size: 5rem;
+    text-shadow: -3px 7px 0px black;
+  }
+  
+  #has{
+    color: #f79aaf;
+  }
+  
+  #text p{
+    color: white;
+    text-align: justify;
+    font-size: 35px;
+    line-height: 50px;
+    margin-left: -25%;
+    margin-right: 40%;
+    margin-top: -5%;
+    padding-top: 1%;
+    border-top: solid #fff;
+    border-width: 5px;
+    text-shadow: -3px 3px 3px black;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
+  .login{
+      width: 40%;
+      height: auto;
+      background-color: white;
+      border-radius: 30px 30px 30px 30px;
+      margin-left: 50%;
+      padding-right: 2%;
+      margin-bottom: 3%;
+      
+  }
+  
+  .login h1{
+      line-height: 40px;
+      color: #101026;
+      text-align: justify;
+      font-size: 2rem;
+      padding: 5% 10% 0% 10%;
+  }
+  
+  .login form{
+      padding-left: 1vw;
+      margin-top: 10%;
+  }
+  
+  .login input{
+      width: 30vw;
+      height: 10vh;
+      border: solid transparent;
+      outline: none;
+      border-bottom: solid #dfdfdf;
+      border-radius: 1px 1px 1px 1px;
+      font-size: 150%;
+      color: #dfdfdf;
+      cursor: pointer;
+  }
+  
+  .botao{
+      display: flex;
+      cursor: pointer;
+      margin-top: 5%;
+      margin-left: 10%;
+      padding-bottom: 5%;
+      width: 85%;
+  }
+  
+  #botao1{
+      border-radius: 50px 0px 0px 50px;
+  }
+  
+  #botao1 p{
+      cursor: pointer;
+      text-align: justify;
+      padding-bottom: 5%;
+  }
+  
+  #botao2{
+      border-radius: 0px 50px 50px 0px;
+  }
+  
+  #botao2 p{
+      text-align: end;
+  }
+  
+  #botao2 img{
+      height: 45%;
+      width: 25%;
+      margin-left: 50%;
+      cursor: pointer;
+  }
+  
+  .botao p{
+      color: #101026;
+      font-weight: bold;
+      font-size: 125%;
+      padding: 5% 10% 5% 10%;
+      margin-top: 5%;
+  }
+  
+  .botao button{
+    width: 420px;
+    background-color: #f79aaf;
+    color: #f79aaf;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 1% 3% 1% 3%;
+    margin-bottom: 10%;
+    margin-top: 20px;
+  }
+  
+  .vtp{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f79aaf;;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  
+  #vtp2{
+    background-color: white;
+  }
+  
+  
+  #vtp3{
+    color: black;
+    background-color: #f79aaf;
+  }
+  
+  .titulo{
+    margin-left: 5%;
+  }
+  
+  .titulo h1{
+    font-size: 50px;
+  }
+  
+  .titulo p{
+    font-size: 20px;
+    margin-top: 2%;
+    line-height: 35px;
+    text-align: justify;
+  }
+  
+  #h1{
+      padding-right: 0%;
+  }
+  
+  #h2{
+      padding-right: 30%;
+  }
+  
+  #p2{
+    padding-right: 30%;
+  }
+  
+  #p3{
+    padding-right: 15%;
+  }
+  
+  .imagem img{
+    border-radius: 5px 5px 5px;
+    width: 67%;
+    height: 100%;
+    margin-left: 23%;
+  }
+  
+  #tel2{
+    height: 100%;
+    width: 100%;
+    margin-left: -15%;
+  }
+  
+  #tel3{
+    height: 100%;
+    width: 75%;
+    margin-left: 14%; 
+  }
+
+#tel4{
+    height: 100%;
+    width: 85%;
+    margin-left: 0%; 
+}
+  
+  
+  #end{
+    background-color: white;
+  }
+  
+  #end h1{
+    font-size: 70px;
+    margin-top: 5%;
+    text-shadow: -3px 7px 0px #f79aaf;
+    color: black;
+  }
+
+/*Receitas Home-Page*/
+
+  .overlay_rcp_h{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://static.itdg.com.br/images/600-600/58f98559b31e25754c87faff8f76321c/truques-para-um-pudim-sem-furinhos-confira.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .main-page2{
+    margin-top: 5%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    animation-duration: 2s;
+    background: rgba(0, 0, 0, 0.5)
+ }
+
+ .rcp_title{
+  margin-bottom: 25%;
+  color:white;
+  text-shadow: -3px 4px 0px black;
+  font-size: 3rem;
+  text-align: center;
+  animation-name: typing;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation: typing 2s;
+  overflow: hidden;
+  white-space: pre-line;
+  border-right: 5px solid #fff;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+.recipes{
+  display: grid;
+  grid-template-columns: 20fr 20fr;
+  grid-template-rows: 60vh 60vh;
+  grid-template-areas: "it1 it2"
+                      "it3 it4";
+  text-align: center;
+  margin-bottom: 20%;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  color: #000;
+  background: linear-gradient(to bottom, rgba(255, 146, 146), #f79aaf);
+}
+
+.recipes a{
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 250px;
+  border-radius: 20px;
+}
+
+.recipes h1{
+    margin-top: 2%;
+  }
+  
+  #rcp_img{
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      width: 30vw;
+      height: 40vh;
+  }
+  
+  #barra_rcp{
+    margin-top: 3%;
+    height: 5px;
+    width: 55%;
+  }
+
+  .dificulty{
+      display: flex;
+}
+
+.dificulty p{
+    margin-top: 1.3%;
+    margin-left: -28%;
+    text-align: justify;
+    font-size: 20px;
+    padding: 3% 30% 0% 30%;
+}
+
+.dificulty img{
+    width: 5%;
+    margin-top: 3%;
+    margin-left: 25%;
+}
+
+.text_rcp p{
+  text-align: justify;
+  margin-left: 10%;
+  padding: 2% 30% 0% 15%;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+
+#item1{
+  grid-area: it1;
+}
+
+
+#item2{
+  grid-area: it2; 
+}
+
+#item3{
+  grid-area: it3;
+  margin-top: 15%;
+}
+
+#item4{
+  grid-area: it4;
+  margin-top: 15%;
+}
+
+
+  #barra1{
+    height: 3px;
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color: white;
+  }
+
+  #barra2{
+    height: 3px;
+    width: 30%;
+    margin-top: 2%;
+    margin-right: 2%;
+    background-color: white;
+  }
+
+  .divisao{
+      display: flex;
+      justify-content: space-between;
+      margin-top: -25%;
+      padding-bottom: 7%;
+      background:  rgb(247, 154, 175);
+    }
+    
+    .divisao p{
+      background-color: white;
+      font-weight: bold;
+      color: #f79aaf;
+      font-size: 25px;
+      text-align: center;
+      padding: 20px 20px 20px 20px;
+      border-radius: 30px 30px 30px;
+    }
+
+/* --- RECEITAS --- */
+    
+.overlay_rcp{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img.freepik.com/fotos-gratis/a-vista-superior-fornece-composicao-com-fundo-rosa_23-2149491461.jpg?w=740&t=st=1687312412~exp=1687313012~hmac=7dbfaaac23302539d683340ad8dc85c767641a7c1d27c0d7ec84ff3c69c68e64');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.receita_page{
+  padding-top: 10%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pd_title{
+  color: white;
+  background-color: rgb(247, 154, 175, 0.8);
+  border-radius: 20px 20px 20px;
+  width: 65vw;
+  margin-left: 17%;
+  text-shadow: -3px 7px 0px black;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 5%;
+  margin-bottom: 15%;
+  animation-name: typing2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation: typing2 2s;
+  overflow: hidden;
+  white-space: pre-line;
+  border-right: 5px none #fff;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65vw;
+    border-right: none;
+  }
+}
+
+.pd_receita{
+  display: flex;
+  margin-top: 5%;
+  padding-bottom: 15%;
+}
+
+.pd_receita p{
+  font-size: 20px;
+  padding: 3% 2% 3% 2%;
+}
+
+#pd_img{
+  margin-left: 5%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#pd_img_cho{
+  width: 50vw;
+  height: 60vh;
+  margin-left: 5%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+#pd_img_anime{
+  width: 50vw;
+  height: 61vh;
+  margin-left: 2%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.icons{
+  display: flex;
+  text-align: center;
+  background-color: rgb(247, 154, 175, 0.8);;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 200%;
+}
+
+.icon1{
+  margin-top: 5%;
+}
+
+.icon1 p{
+  font-size: 25px;
+  text-align: center;
+}
+
+.icon2{
+  margin-top: 5.5%;
+  margin-right: 7%;
+  font-size: 15px;
+}
+
+.icon2 p{
+  font-size: 25px;
+}
+
+.pd_description{
+  text-align: justify;
+  display: flex;
+  margin-top: 11%;
+  margin-left: -30%;
+  margin-right: 20%;
+  padding-right: 5%;
+  line-height: 30px;
+}
+
+.pd_description p{
+  font-size: 25px;
+}
+
+.pd_description_cnca{
+  text-align: justify;
+  display: flex;
+  margin-top: 15%;
+  margin-left: -30%;
+  margin-right: 15%;
+  padding-right: 0%;
+  line-height: 40px;
+}
+
+.pd_description_cnca p{
+  font-size: 30px;
+}
+
+.pd_description_cho{
+  text-align: justify;
+  display: flex;
+  margin-top: 15%;
+  margin-left: -40%;
+  margin-right: 10%;
+  padding-right: 0%;
+  line-height: 40px;
+}
+
+.pd_description_cho p{
+  font-size: 25px;
+}
+
+.pd_description_anime{
+  text-align: justify;
+  display: flex;
+  margin-top: 15%;
+  margin-left: -35%;
+  margin-right: 13%;
+  line-height: 30px;
+}
+
+.pd_description_anime p{
+  font-size: 25px;
+}
+
+#icon{
+  width: 5vw;
+  height: 10vh;
+}
+
+.pd_receita_prep{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgb(255, 255, 255);
+}
+
+.pd_receita_prep li{
+  margin-bottom: 5%;
+}
+
+.pd_receita1{
+  text-align: justify;
+  margin-right: 10%;
+}
+
+.pd_receita2{
+  text-align: justify;
+  margin-right: 10%;
+}
+
+.receita_title{
+  color: white;
+  font-size: 20px;
+  text-shadow: -3px 5px 0px black;
+  margin-bottom: 5%;
+  background-color: #f79aaf;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 2% 0% 2% 5%;
+}
+
+.ingredientes{
+  display: flex;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.ingredientes li{
+  margin-bottom: 10%;
+  margin-left: 15%;
+  margin-right: -10%;
+}
+
+.ingredientes img{
+  margin-left: -10%;
+}
+
+.item{
+  display: flex;
+}
+.item span{
+  margin-top: 5%;
+}
+
+.ingredientes2{
+  margin-top: -1%;
+  margin-left: 15%;
+}
+
+.md_prep{
+  font-size: 25px;
+  margin-left: 2%;
+}
+
+.item2{
+  display: flex;
+}
+.item2 span{
+  margin-top: 2%;
+  line-height: 50px;
+}
+
+#o_rcp{
+  text-decoration: underline;
+}
+
+#n_icon{
+  margin-right: 3%;
+  margin-bottom: 1%;
+  width: 6vw;
+  height: 12vh;
+}
+
+/*Rodape*/
+
+#barra{
+  height: 5px;
+  background-color: #f79aaf;
+}
+
+footer{
+  background-color: black;
+}
+
+.rodape{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  line-height: 30px;
+  color: #f79aaf;
+}
+
+.rodape h3{
+  font-size: 25px;
+  margin-bottom: 10%;
+}
+
+.rodape a{
+    color: #f79aaf;
+}
+
+#rdp1{
+  margin-left: 10%;
+}
+
+#rdp2{
+  margin-right: 50%;
+}
+
+#rdp3{
+  margin-top: -5%;
+  margin-left: 10%;
+}
+
+#rdp4{
+  margin-right: 53%;
+  margin-top: -5%;
+}
